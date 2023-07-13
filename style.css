@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+body{
+  background-image:  linear-gradient(90deg, rgba(67,94,230,1) 15%, rgba(133,114,230,1) 100%);
+}
+
+.title {
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  font-size: 2rem; /* change the percent */
+  color: white;
+  padding: 30px 10px;
+  margin: 30px 0 5px; /*2change the percents */
+  background-color: black;
+  border-radius: 20px;
+  border-bottom: 5px solid white;
+}
+
+.link1, .link2, .link3, .link4{
+  color: green;
+  background-color: transparent;
+  text-decoration: underline;
+
+}
+
+a:link {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(247, 134, 153);
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.showcase1, .showcase2, .showcase3, .showcase4 {
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  font-size:150%;
+  color:white;
+  padding: 20px 10px 20px;
+  margin: 30px unset 20px; /*2change the percents */
+  background-color: black;
+  border-radius: 20px;
+  border: 3px solid rgb(52, 52, 52);
+}
+
+.name2 {
+  font-family: 'Quicksand', sans-serif;
+  text-align:center;
+  font-size: 195%;
+  color: white;
+}
+
+.pfp {
+  border-radius: 50%;
+  border: 5px solid rgb(46, 51, 51);
+}
+
+.name {
+  margin: 0;
+}
+
+.socials {
+  font-size: 30px;
+  background-color:rgba(255,255,255,0.2);
+  margin: 20px 23% 20px 23%;
+  border-radius: 20px;
+  border-bottom: 2px solid rgb(211, 190, 190);
+  padding: 10px;
+  color: white;
+}
+
+.socials i {
+  text-shadow: 2px 2px 5px rgba(214, 214, 227, 25%);
+}
+
+.socials img {
+  filter: drop-shadow(2px 2px 5px rgba(214, 214, 227, 25%));
+}
+
+.socials a:hover {
+  filter: brightness(87%);
+}
+
+.divider {
+  height: 10px;
+  border-bottom: 2px solid rgb(185, 183, 183);
+  margin-top:15px;
+}
+
+.showcase {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 1rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 1300px) {
+  .showcase {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+.parent {
+  padding: 2rem 7rem;
+}
+
+@media screen and (max-width: 700px) {
+  .parent {
+    padding: 2rem 3rem;
+  }
+  .title {
+    font-size: 1rem;
+  }
+}
+
+.link1 a:hover{
+  filter: brightness(87%);
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 100vw;
+  background: rgba(255,255,255,0.4);
+  padding: 0 calc(1.5rem - 1px) 0 10px;
+}
+
+.popuptext{
+  background-color: transparent;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  font-size: 1.1rem; /* change the percent */
+  color: white;
+}
+
+.close {
+  background-color: transparent;
+  border-radius: 15px; 
+  border: 1px solid black;
+  width: 2rem;
+  height:45px;
+  color:black;
+  font-size:1rem;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  text-decoration: none;
+  display: inline;
+  font-size: 16px;
+  cursor:pointer;
+}
+
+
+/* credits: https://getcssscan.com/css-buttons-examples  ---------------- */
+
+.button-6 {
+  align-items: left;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline;
+  font-family:'Quicksand', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+  
+  position: fixed;
+  top:0;
+  right: 10px;
+}
+
+.button-6:hover,
+.button-6:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.button-6:hover {
+  transform: translateY(-1px);
+}
+
+.button-6:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+/* -------------- */
+
+.bottom {
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  font-size: 100%; 
+  color: rgb(0, 0, 0);
+  padding: 20px 10px 20px;
+  margin: 0px 0px 0px 0px ;
+  background-color: rgb(240, 235, 235);
+
+
+}
