@@ -127,6 +127,7 @@ a:active {
   .showcase1, .showcase2, .showcase3, .showcase4 {
     width:200px;
     height:150px;
+    font-size:100%;
   }
 }
 
