@@ -117,7 +117,7 @@ a:active {
   padding: 2rem 7rem;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .parent {
     padding: 2rem 3rem;
   }
